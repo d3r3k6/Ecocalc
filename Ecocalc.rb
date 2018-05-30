@@ -8,7 +8,15 @@ All of this will eventually be refactored.
 =end
 
 #This is a simple convertor to go from celsius to fahrenheit
-puts "Please enter the degree celsius that you would like converted."
-celsius = gets.to_i
-fahrenheit = (celsius * 9/ 5) + 32
-puts fahrenheit
+
+#call c on celsius_conversion
+def celsius_conversion (c)
+  fahrenheit = (c * 9/ 5) + 32
+  puts fahrenheit
+end
+
+#call f on fahrenheit_conversion
+def fahrenheit_conversion (f)
+  celsius = (f -32) / (5/9)
+  puts celsius
+end
